@@ -10,7 +10,9 @@ function flattenArray(arr) {
       result.push(item);
     }
   });
+
   return result;
+  
   // const arr1 = arr.reduce((acc, curr) => {
   //   if (Array.isArray(curr)) {
   //     acc.push(...flattenArray(curr));
