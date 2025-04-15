@@ -1,28 +1,28 @@
 const list = [1, 5, 1, 2, 5, 6, 8, 7, 6, 5, 4, 3, 3, 2, 4, 5, 1, 1];
 
 function total(arr) {
-  // let result = {};
+  let result = {};
 
-  // for (const item of arr) {
-  //   let current = arr[item];
-  //   if (!result[item]) {
-  //     result[item] = 1;
-  //   } else {
-  //     result[item]++;
-  //   }
-  // }
+  for (const item of arr) {
+    let current = arr[item];
+    if (!result[item]) {
+      result[item] = 1;
+    } else {
+      result[item]++;
+    }
+  }
 
-  // let maxNum = [];
-  // let maxValue = 0;
+  let maxNum = [];
+  let maxCount = 0;
 
-  // for (const item in result) {
-  //   if (result[item] > maxValue) {
-  //     maxValue = [parseInt(result[item])];
-  //     maxNum = item;
-  //   } else if (result[item] === maxValue) {
-  //     maxNum.push(parseInt(item));
-  //   }
-  // }
+  for (const item in result) {
+    if (result[item] > maxCount) {
+      maxCount = [parseInt(result[item])];
+      maxNum = item;
+    } else if (result[item] === maxCount) {
+      maxNum.push(parseInt(item));
+    }
+  }
 
   // let map = new Map();
 
@@ -35,13 +35,13 @@ function total(arr) {
   // }
 
   // let maxNum = [];
-  // let maxValue = 0;
+  // let maxCount = 0;
   // for (const [key, value] of map) {
   //   // console.log(item);
-  //   if (value > maxValue) {
-  //     maxValue = value;
+  //   if (value > maxCount) {
+  //     maxCount = value;
   //     maxNum = [key];
-  //   } else if (value === maxValue) {
+  //   } else if (value === maxCount) {
   //     maxNum.push(key);
   //   }
   // }
@@ -62,7 +62,7 @@ function total(arr) {
   //   }
   // }
 
-  // return `${maxNum} , ${maxCount}`;
+  return `${maxNum} , ${maxCount}`;
 }
 
 console.log(total(list));
