@@ -8,7 +8,8 @@ function longestPrefix(str) {
     char = firstChar[i];
 
     for (const item of str) {
-      if (i >= str.length || str[i] !== char) {
+      console.log(item);
+      if (i >= item.length || item[i] !== char) {
         return result;
       }
     }
