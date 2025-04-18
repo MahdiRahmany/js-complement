@@ -1,4 +1,4 @@
-const arrayList = [1, 3, 5, [2, 6, 7, 9], 4];
+const arrayList = [1, 3, 5, [2, [6, 7], 9], 4];
 
 function flattenArray(arr) {
   // return arr.flat(3);
