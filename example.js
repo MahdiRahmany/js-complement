@@ -296,6 +296,7 @@ setTimeout(() => {
 }, 2000);
 */
 
+/*
 // 11 - reverse string
 
 // todo: check true of false, reverse array
@@ -325,3 +326,4 @@ const reverseArray = (arr) => {
 
 // log
 console.log(reverseArray(array));
+*/
